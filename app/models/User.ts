@@ -18,7 +18,7 @@ export default class User extends compose(BaseModel, AuthFinder) {
   public clients: HasMany<typeof Client>
 
   @hasMany(() => InstallmentPlan)
-  public installmentPlans: HasMany<typeof InsrallmentPlan>
+  public installmentPlans: HasMany<typeof InstallmentPlan>
 
   @column({ isPrimary: true })
   declare id: number
